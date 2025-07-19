@@ -1,0 +1,158 @@
+body,
+h2,
+h3,
+p {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+header {
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  color: #0179bf;
+  border-bottom: #6eb7e9 solid 2px;
+}
+
+.default-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 40px 15px;
+}
+
+.categories_grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 160px);
+  place-items: stretch;
+  gap: 20px;
+}
+
+.grid-item-span-col-1-2 {
+  background-color: #0179bf;
+}
+
+.grid-item-span-col-2-4 {
+  background-color: #6eb7e9;
+  grid-column: span 2;
+}
+
+.background-image {
+  border-radius: 5px;
+  padding: 16px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  background-color: #000000;
+}
+
+.pic-1 {
+  background-image: url(./assets/category-1.webp);
+}
+.pic-2 {
+  background-image: url(./assets/category-2.webp);
+}
+.pic-3 {
+  background-image: url(./assets/category-3.webp);
+}
+.pic-4 {
+  background-image: url(./assets/category-4.webp);
+}
+.pic-5 {
+  background-image: url(./assets/category-5.webp);
+}
+.pic-6 {
+  background-image: url(./assets/category-6.webp);
+}
+
+.form {
+  grid-column: span 2;
+  grid-row: 2 / span 2;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-header {
+  gap: 10px;
+  flex-direction: column;
+}
+
+.form-footer {
+  gap: 8px;
+  align-items: center;
+}
+
+.button {
+  background-color: #0179bf;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 140%;
+  border-radius: 5px;
+  white-space: pre;
+}
+
+.checkbox {
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+}
+
+.color-main {
+  color: #0179bf;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 24px;
+}
+.heading-3 {
+  font-size: 16px;
+}
+
+.text-shadow {
+  text-shadow: 0 2px 8px #393939;
+}
+
+.color-wh {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #6eb7e9;
+}
+
+.flex {
+  display: flex;
+}
+
+.menu_list {
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.buttons {
+  gap: 12px;
+  align-items: center;
+}

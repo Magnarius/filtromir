@@ -1,4 +1,5 @@
 body,
+hr,
 h2,
 h3,
 p {
@@ -12,7 +13,13 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #0179bf;
-  border-bottom: #6eb7e9 solid 2px;
+}
+
+hr.header-hr {
+  width: 100%;
+  height: 2px;
+  background-color: #6eb7e9;
+  border: none;
 }
 
 .default-container {
@@ -48,7 +55,20 @@ header {
   background-position: center;
   background-size: cover;
   text-align: center;
-  background-color: #000000;
+  position: relative;
+}
+
+.background-image::before {
+  content: '';
+  position: absolute;
+  inset: 0; /* аналог top: 0; right: 0; bottom: 0; left: 0; */
+  background-color: rgba(0, 0, 0, 0.4); /* степень затемнения */
+  z-index: 1;
+}
+
+.background-image > h3 {
+  z-index: 2;
+  position: relative;
 }
 
 .pic-1 {
@@ -86,6 +106,11 @@ header {
   flex-direction: column;
 }
 
+.form-body {
+  gap: 8px;
+  flex-direction: column;
+}
+
 .form-footer {
   gap: 8px;
   align-items: center;
@@ -100,12 +125,12 @@ header {
   line-height: 140%;
   border-radius: 5px;
   white-space: pre;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
 }
 
-.checkbox {
-  height: 20px;
-  width: 20px;
-  border-radius: 10px;
+.button:hover {
+  opacity: 0.8;
 }
 
 .color-main {
@@ -155,4 +180,77 @@ a:hover {
 .buttons {
   gap: 12px;
   align-items: center;
+}
+
+.custom-checkbox {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  transform: translateY(-50%);
+  transition: border 0.2s ease-in-out;
+  box-sizing: border-box;
+}
+
+.custom-checkbox input:hover ~ .checkmark {
+  border-color: #6eb7e9;
+}
+
+/* Когда чекбокс активен */
+.custom-checkbox input:checked ~ .checkmark {
+  background-color: #0179bf;
+  border-color: #0179bf;
+}
+
+/* Галочка */
+.custom-checkbox .checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.custom-checkbox input:checked ~ .checkmark::after {
+  display: block;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 1px 1px 0;
+  transform: rotate(45deg);
+}
+
+.custom-input {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  transition: border 0.2s ease-in-out;
+  border: 1px solid #fff;
+}
+
+.custom-input::placeholder {
+  color: #7a7a7a;
+}
+
+.custom-input:focus {
+  border: 1px solid #6eb7e9;
 }

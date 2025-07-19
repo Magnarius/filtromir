@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
     <link href="./style.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+    ></script>
+    <script type="text/javascript" src="./main.js"></script>
   </head>
   <body>
     <header class="flex bold default-container">
-      <nav class="menu text">
+      <nav class="menu text" id="mainMenu">
+        <div class="mobile-menu-header"></div>
         <ul class="menu_list flex">
           <li>
             <a
@@ -31,7 +37,7 @@
         <a href="/">Вход</a>
         <a href="/">Регистрация</a>
 
-        <a href="/"
+        <a href="/" aria-label="Корзина" class="cart"
           ><svg
             width="28"
             height="28"
@@ -45,6 +51,16 @@
             />
           </svg>
         </a>
+        <button
+          class="burger-icon"
+          id="burgerBtn"
+          aria-label="Переключить меню"
+          aria-controls="mobileMenu"
+          aria-expanded="false"
+          tabindex="0"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </header>
     <hr class="header-hr" />
@@ -112,4 +128,5 @@
       </div>
     </section>
   </body>
+  <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
 </html>

@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  color: #0179bf;
+  padding: 0 146px;
+  border-bottom: #6eb7e9 solid 2px;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: auto;
+  font-weight: bold;
+  color: #0179bf;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #6eb7e9;
+}
+
+.flex {
+  display: flex;
+}
+
+.menu_list {
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.buttons {
+  gap: 12px;
+  align-items: center;
+}

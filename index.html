@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
     <link href="./style.css" rel="stylesheet" />
+    <link href="./main.min.css" rel="stylesheet" />
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -12,121 +13,3835 @@
     <script type="text/javascript" src="./main.js"></script>
   </head>
   <body>
-    <header class="flex bold default-container">
-      <nav class="menu text" id="mainMenu">
-        <div class="mobile-menu-header"></div>
-        <ul class="menu_list flex">
-          <li>
-            <a
-              href="file:///Users/magnarius/Documents/git/filtromir/header/index.html"
-              >О компании</a
-            >
-          </li>
-          <li>
-            <a
-              href="file:///Users/magnarius/Documents/git/filtromir/categories/index.html"
-              >Доставка и оплата</a
-            >
-          </li>
-          <li><a href="/">Услуги</a></li>
-          <li><a href="/">Полезная информация</a></li>
-          <li><a href="/">Контакты</a></li>
-        </ul>
-      </nav>
-      <div class="buttons text flex">
-        <a href="/">Вход</a>
-        <a href="/">Регистрация</a>
-
-        <a href="/" aria-label="Корзина" class="cart"
-          ><svg
-            width="28"
-            height="28"
-            viewBox="0 0 28 28"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+    <header class="header">
+      <div class="header-top-menu flex bold default-container">
+        <nav class="menu text" id="mainMenu">
+          <div class="mobile-menu-header"></div>
+          <ul class="menu_list flex">
+            <li>
+              <a
+                class="header-menu-link"
+                href="file:///Users/magnarius/Documents/git/filtromir/header/index.html"
+                >О компании</a
+              >
+            </li>
+            <li>
+              <a
+                class="header-menu-link"
+                href="file:///Users/magnarius/Documents/git/filtromir/categories/index.html"
+                >Доставка и оплата</a
+              >
+            </li>
+            <li><a class="header-menu-link" href="/">Услуги</a></li>
+            <li>
+              <a class="header-menu-link" href="/">Полезная информация</a>
+            </li>
+            <li><a class="header-menu-link" href="/">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="buttons text flex">
+          <a class="header-menu-link" href="https://filtromir.ru/user/login"
+            >Вход</a
           >
-            <path
-              d="M1.00522 0.932114C0.73862 0.932114 0.482938 1.03802 0.294423 1.22654C0.105907 1.41505 0 1.67073 0 1.93734C0 2.20394 0.105907 2.45962 0.294423 2.64813C0.482938 2.83665 0.73862 2.94256 1.00522 2.94256H2.86287C3.09072 2.94256 3.28909 3.09535 3.34806 3.31516L6.77653 16.1713C5.6997 16.4518 4.74634 17.0817 4.06578 17.9621C3.38522 18.8425 3.0159 19.9238 3.01567 21.0365C3.01567 21.5914 3.466 22.0418 4.02089 22.0418H25.1305C25.3971 22.0418 25.6528 21.9359 25.8413 21.7473C26.0299 21.5588 26.1358 21.3031 26.1358 21.0365C26.1358 20.7699 26.0299 20.5143 25.8413 20.3257C25.6528 20.1372 25.3971 20.0313 25.1305 20.0313H5.19767C5.40559 19.4432 5.79077 18.9341 6.30014 18.574C6.80951 18.2139 7.41799 18.0207 8.04177 18.0209H23.0772C23.2655 18.0209 23.45 17.968 23.6098 17.8682C23.7695 17.7685 23.898 17.6258 23.9806 17.4566C25.5108 14.3164 26.836 11.0804 27.9478 7.76896C27.9918 7.63796 28.0082 7.49931 27.9962 7.36167C27.9841 7.22403 27.9438 7.09035 27.8778 6.96898C27.8118 6.8476 27.7214 6.74115 27.6124 6.65626C27.5034 6.57136 27.378 6.50986 27.2442 6.47558C20.1752 4.67308 12.8964 3.82696 5.60244 3.95984L5.29149 2.7978C5.14882 2.26268 4.83339 1.78967 4.3942 1.45228C3.95502 1.11489 3.41669 0.932032 2.86287 0.932114H1.00522ZM3.01567 25.0574C3.01567 24.5242 3.22748 24.0129 3.60451 23.6358C3.98154 23.2588 4.49291 23.047 5.02611 23.047C5.55931 23.047 6.07068 23.2588 6.44771 23.6358C6.82474 24.0129 7.03655 24.5242 7.03655 25.0574C7.03655 25.5906 6.82474 26.102 6.44771 26.479C6.07068 26.8561 5.55931 27.0679 5.02611 27.0679C4.49291 27.0679 3.98154 26.8561 3.60451 26.479C3.22748 26.102 3.01567 25.5906 3.01567 25.0574ZM20.1044 25.0574C20.1044 24.5242 20.3162 24.0129 20.6933 23.6358C21.0703 23.2588 21.5817 23.047 22.1149 23.047C22.6481 23.047 23.1594 23.2588 23.5365 23.6358C23.9135 24.0129 24.1253 24.5242 24.1253 25.0574C24.1253 25.5906 23.9135 26.102 23.5365 26.479C23.1594 26.8561 22.6481 27.0679 22.1149 27.0679C21.5817 27.0679 21.0703 26.8561 20.6933 26.479C20.3162 26.102 20.1044 25.5906 20.1044 25.0574Z"
-              fill="currentColor"
-            />
-          </svg>
-        </a>
-        <button
-          class="burger-icon"
-          id="burgerBtn"
-          aria-label="Переключить меню"
-          aria-controls="mobileMenu"
-          aria-expanded="false"
-          tabindex="0"
-        >
-          <span></span><span></span><span></span>
-        </button>
+          <a class="header-menu-link" href="https://filtromir.ru/user/register"
+            >Регистрация</a
+          >
+
+          <a href="/" aria-label="Корзина" class="cart header-menu-link"
+            ><svg
+              width="28"
+              height="28"
+              viewBox="0 0 28 28"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.00522 0.932114C0.73862 0.932114 0.482938 1.03802 0.294423 1.22654C0.105907 1.41505 0 1.67073 0 1.93734C0 2.20394 0.105907 2.45962 0.294423 2.64813C0.482938 2.83665 0.73862 2.94256 1.00522 2.94256H2.86287C3.09072 2.94256 3.28909 3.09535 3.34806 3.31516L6.77653 16.1713C5.6997 16.4518 4.74634 17.0817 4.06578 17.9621C3.38522 18.8425 3.0159 19.9238 3.01567 21.0365C3.01567 21.5914 3.466 22.0418 4.02089 22.0418H25.1305C25.3971 22.0418 25.6528 21.9359 25.8413 21.7473C26.0299 21.5588 26.1358 21.3031 26.1358 21.0365C26.1358 20.7699 26.0299 20.5143 25.8413 20.3257C25.6528 20.1372 25.3971 20.0313 25.1305 20.0313H5.19767C5.40559 19.4432 5.79077 18.9341 6.30014 18.574C6.80951 18.2139 7.41799 18.0207 8.04177 18.0209H23.0772C23.2655 18.0209 23.45 17.968 23.6098 17.8682C23.7695 17.7685 23.898 17.6258 23.9806 17.4566C25.5108 14.3164 26.836 11.0804 27.9478 7.76896C27.9918 7.63796 28.0082 7.49931 27.9962 7.36167C27.9841 7.22403 27.9438 7.09035 27.8778 6.96898C27.8118 6.8476 27.7214 6.74115 27.6124 6.65626C27.5034 6.57136 27.378 6.50986 27.2442 6.47558C20.1752 4.67308 12.8964 3.82696 5.60244 3.95984L5.29149 2.7978C5.14882 2.26268 4.83339 1.78967 4.3942 1.45228C3.95502 1.11489 3.41669 0.932032 2.86287 0.932114H1.00522ZM3.01567 25.0574C3.01567 24.5242 3.22748 24.0129 3.60451 23.6358C3.98154 23.2588 4.49291 23.047 5.02611 23.047C5.55931 23.047 6.07068 23.2588 6.44771 23.6358C6.82474 24.0129 7.03655 24.5242 7.03655 25.0574C7.03655 25.5906 6.82474 26.102 6.44771 26.479C6.07068 26.8561 5.55931 27.0679 5.02611 27.0679C4.49291 27.0679 3.98154 26.8561 3.60451 26.479C3.22748 26.102 3.01567 25.5906 3.01567 25.0574ZM20.1044 25.0574C20.1044 24.5242 20.3162 24.0129 20.6933 23.6358C21.0703 23.2588 21.5817 23.047 22.1149 23.047C22.6481 23.047 23.1594 23.2588 23.5365 23.6358C23.9135 24.0129 24.1253 24.5242 24.1253 25.0574C24.1253 25.5906 23.9135 26.102 23.5365 26.479C23.1594 26.8561 22.6481 27.0679 22.1149 27.0679C21.5817 27.0679 21.0703 26.8561 20.6933 26.479C20.3162 26.102 20.1044 25.5906 20.1044 25.0574Z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <button
+            class="burger-icon"
+            id="burgerBtn"
+            aria-label="Переключить меню"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            tabindex="0"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <hr class="header-hr" />
+      <div class="header__bottom">
+        <div class="wrapper">
+          <span class="logo"
+            ><img
+              width="165"
+              height="59"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/logo.png"
+              title="ФильтроМир - фильтры для воды"
+              alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+          /></span>
+
+          <div class="header__bottom_item header__bottom_phone">
+            <div class="header__bottom_item-text">
+              <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+              <div>
+                <a class="open_modal" style="display: inline; font-size: 12px"
+                  >Ваш город: </a
+                ><a
+                  class="open_modal"
+                  href="#city__click"
+                  style="
+                    display: inline;
+                    border-bottom: 1px dashed black;
+                    font-size: 12px;
+                  "
+                  >Ростов</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="header__bottom_wrap">
+            <form action="/products" class="block__search" target="_top">
+              <input
+                type="text"
+                id="title-search-input"
+                name="keyword"
+                value=""
+                placeholder="Поиск по товарам..."
+                autocomplete="off"
+              />
+              <button type="submit">
+                <img
+                  width="18"
+                  height="18"
+                  src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/search.png"
+                  class="img-responsive"
+                  title="Поиск по товарам"
+                  alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                />
+              </button>
+            </form>
+          </div>
+          <div class="header__bottom_item header__bottom_comparison">
+            <a href="https://filtromir.ru/compare" class="btn btn__icon"
+              ><img
+                width="22"
+                height="15"
+                src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics.png"
+                class="img-responsive"
+                title="Список сравнения"
+                alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+            /></a>
+            <div class="header__bottom_item-text">
+              <a href="https://filtromir.ru/compare">Сравнение</a>
+              <p id="compare_informer">Нет товаров</p>
+            </div>
+          </div>
+          <div
+            class="header__bottom_item header__bottom_basket"
+            id="cart_informer"
+          >
+            <a href="cart" class="btn btn__icon"
+              ><img
+                width="20"
+                height="20"
+                src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/basket.png"
+                class="img-responsive"
+                title="Корзина товаров"
+                alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+              />
+              <div class="quantity">0</div></a
+            >
+            <div class="header__bottom_item-text">
+              <a href="cart">В корзине</a>
+              <p>Сумма: <strong>0</strong> руб.</p>
+            </div>
+            <div id="cart_popup" style="display: none"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__menu">
+        <div class="wrapper">
+          <div id="mobile_mnu" data-catclass="header__menu_nav">
+            <img
+              width="16"
+              height="12"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/mob_menu-icon.png"
+              class="img-responsive"
+              title="Мобильное меню"
+              alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+            />КАТАЛОГ
+          </div>
+          <nav class="header__menu_nav">
+            <ul class="header__menu_nav-listGroup">
+              <li>
+                <a href="https://filtromir.ru/catalog/obratnyj-osmos"
+                  >Обратный осмос</a
+                >
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/filtr-obratnogo-osmosa"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093302.jpg"
+                        alt="Фильтр обратного осмоса"
+                      />
+                      <div class="gth">Фильтр обратного осмоса</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/obratnyj-osmos-s-nasosom"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092742.jpg"
+                        alt="Обратный осмос с насосом"
+                      />
+                      <div class="gth">Обратный осмос с насосом</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/promishlenniy-osmos"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093101.jpg"
+                        alt="Промышленный осмос"
+                      />
+                      <div class="gth">Промышленный осмос</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/kommercheskij-osmos"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/683e06d01156fb5b9007cabafe016b5c.jpg (500×500) - Google Chrome_240414150535.png"
+                        alt="Коммерческий осмос"
+                      />
+                      <div class="gth">Коммерческий осмос</div></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://filtromir.ru/catalog/protochnye-filtry"
+                  >Проточные фильтры</a
+                >
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="https://filtromir.ru/catalog/filtry-pod-mojku"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092703.jpg"
+                        alt="Фильтры под мойку"
+                      />
+                      <div class="gth">Фильтры под мойку</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/nastolnye-filtry"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092931.jpg"
+                        alt="Настольные фильтры"
+                      />
+                      <div class="gth">Настольные фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/filtry-nasadki-na-kran"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092612.jpg"
+                        alt="Фильтры насадки на кран"
+                      />
+                      <div class="gth">Фильтры насадки на кран</div></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://filtromir.ru/catalog/filtry-na-ves-dom"
+                  >Фильтры на весь дом</a
+                >
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/kompleksnaya-ochistka-vody"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg"
+                        alt="Комплексная очистка воды"
+                      />
+                      <div class="gth">Комплексная очистка воды</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/filtry-ot-zheleza"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg"
+                        alt="Фильтры от железа"
+                      />
+                      <div class="gth">Фильтры от железа</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/ochistka-ot-serovodoroda"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg"
+                        alt="Очистка от сероводорода"
+                      />
+                      <div class="gth">Очистка от сероводорода</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/filtry-umyagchiteli"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg"
+                        alt="Фильтры умягчители"
+                      />
+                      <div class="gth">Фильтры умягчители</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/komplekty-filtrov-na-ves-dom"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092548.jpg"
+                        alt="Комплекты фильтров на весь дом"
+                      />
+                      <div class="gth">Комплекты фильтров на весь дом</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/ugolnye-kolonny"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092959.jpg"
+                        alt="Угольные колонны"
+                      />
+                      <div class="gth">Угольные колонны</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/purifajery"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093042.jpg"
+                        alt="Пурифайеры"
+                      />
+                      <div class="gth">Пурифайеры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/ochistiteli-vozduha"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_210820111042.jpg"
+                        alt="Очистители воздуха"
+                      />
+                      <div class="gth">Очистители воздуха</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/nakopitelnye-baki-dlya-vody"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/ecd0c303ae9a239aa2b8f864929d22e3_2020-12-03_01-39-29.jpg"
+                        alt="Накопительные баки для воды"
+                      />
+                      <div class="gth">Накопительные баки для воды</div></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://filtromir.ru/catalog/magistralnye-filtry"
+                  >Магистральные фильтры</a
+                >
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="https://filtromir.ru/catalog/mehanicheskie-filtry"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312091352.jpg"
+                        alt="Механические фильтры"
+                      />
+                      <div class="gth">Механические фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/setchatye-filtry"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092723.jpg"
+                        alt="Сетчатые фильтры"
+                      />
+                      <div class="gth">Сетчатые фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/meshochnye-filtry"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312094712.jpg"
+                        alt="Мешочные фильтры"
+                      />
+                      <div class="gth">Мешочные фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/diskovye-filtry"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312094757.jpg"
+                        alt="Дисковые фильтры"
+                      />
+                      <div class="gth">Дисковые фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/flantsevye-filtry"
+                      ><div class="gth">Фланцевые фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/filtry-ot-nakipi"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312094611.jpg"
+                        alt="Фильтры от накипи"
+                      />
+                      <div class="gth">Фильтры от накипи</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/reduktory-davleniya-vody"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093243.jpg"
+                        alt="Редукторы давления воды"
+                      />
+                      <div class="gth">Редукторы давления воды</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/multipatronnye-filtry"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/slider-2223.jpg"
+                        alt="Мультипатронные фильтры"
+                      />
+                      <div class="gth">Мультипатронные фильтры</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/nasosnye-stantsii"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_240413190355.png"
+                        alt="Насосные станции"
+                      />
+                      <div class="gth">Насосные станции</div></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://filtromir.ru/catalog/smennye-filtry"
+                  >Сменные фильтры</a
+                >
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/kartridzhi-dlya-obratnogo-osmosa"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/kartridgi-osmos.jpg"
+                        alt="Картриджи для обратного осмоса"
+                      />
+                      <div class="gth">Картриджи для обратного осмоса</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/kartridzhi-dlya-protochnogo-filtra"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/kartridgi-protochnie.jpg"
+                        alt="Картриджи для проточного фильтра"
+                      />
+                      <div class="gth">Картриджи для проточного фильтра</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/kartridzhi-dlya-magistralnogo-filtra"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/kartridg-dlya-hol-vody.jpg"
+                        alt="Картриджи для магистрального фильтра"
+                      />
+                      <div class="gth">
+                        Картриджи для магистрального фильтра
+                      </div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/membrany-obratnogo-osmosa"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312084644.jpg"
+                        alt="Мембраны обратного осмоса"
+                      />
+                      <div class="gth">Мембраны обратного осмоса</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/kartridzhi-dlya-filtrov-kuvshinov"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093323.jpg"
+                        alt="Картриджи для фильтров кувшинов"
+                      />
+                      <div class="gth">Картриджи для фильтров кувшинов</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/filtruyuschie-zagruzki"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092807.jpg"
+                        alt="Фильтрующие загрузки"
+                      />
+                      <div class="gth">Фильтрующие загрузки</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/filtry-dlya-purifajera"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/filtry-purifaeyer1.jpg"
+                        alt="Фильтры для пурифайера"
+                      />
+                      <div class="gth">Фильтры для пурифайера</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/reagenty-dlya-vodopodgotovki"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_240126085146.png"
+                        alt="Реагенты для водоподготовки"
+                      />
+                      <div class="gth">Реагенты для водоподготовки</div></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="https://filtromir.ru/catalog/komplektuyuschie-k-filtram"
+                  >Комплектующие к фильтрам</a
+                >
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="https://filtromir.ru/catalog/krany-dlya-filtra"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093157.jpg"
+                        alt="Краны для фильтра"
+                      />
+                      <div class="gth">Краны для фильтра</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/krany-s-podklyucheniem-k-filtru"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_211102174311.jpg"
+                        alt="Краны с подключением к фильтру"
+                      />
+                      <div class="gth">Краны с подключением к фильтру</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/baki-dlya-obratnogo-osmosa"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093350.jpg"
+                        alt="Баки для обратного осмоса"
+                      />
+                      <div class="gth">Баки для обратного осмоса</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/ultrafioletovye-lampy"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093023.jpg"
+                        alt="Ультрафиолетовые лампы"
+                      />
+                      <div class="gth">Ультрафиолетовые лампы</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/smennye-elementy-dlya-uf-lamp"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/smennie-lampy.jpg"
+                        alt="Сменные элементы для УФ ламп"
+                      />
+                      <div class="gth">Сменные элементы для УФ ламп</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/zapchasti-i-fitingi-dlya-filtrov"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092825.jpg"
+                        alt="Запчасти и фитинги для фильтров"
+                      />
+                      <div class="gth">Запчасти и фитинги для фильтров</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/nasosy-pompy-dlya-obratnogo-osmosa"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312093131.jpg"
+                        alt="Насосы (помпы) для обратного осмоса"
+                      />
+                      <div class="gth">
+                        Насосы (помпы) для обратного осмоса
+                      </div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/upravlyayuschie-klapana-k-filtram"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092639.jpg"
+                        alt="Управляющие клапана"
+                      />
+                      <div class="gth">Управляющие клапана</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/korpusa-zasypnyh-filtrov"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Clip2net_200312092905.jpg"
+                        alt="Корпуса засыпных фильтров"
+                      />
+                      <div class="gth">Корпуса засыпных фильтров</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/nasosy-dlya-promyshlennyh-osmosov"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Sell-TDL-Vertical-inline-multistage.jpg"
+                        alt="Насосы для промышленных осмосов"
+                      />
+                      <div class="gth">Насосы для промышленных осмосов</div></a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://filtromir.ru/catalog/nasosy-dozirovaniya"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/dozir-nasos.jpg"
+                        alt="Насосы дозирования"
+                      />
+                      <div class="gth">Насосы дозирования</div></a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://filtromir.ru/catalog/vodoschetchiki-impulsnye"
+                      ><img
+                        width="58"
+                        height="58"
+                        src="https://filtromir.ru/files/categories/Schetchik-holodnoy-vody-impulsnyy-Uzmeter-Dn-25-Kitay.0x340.png"
+                        alt="Водосчётчики импульсные"
+                      />
+                      <div class="gth">Водосчётчики импульсные</div></a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                  >Услуги</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-    <hr class="header-hr" />
-    <section class="section default-container categories_grid">
-      <div class="grid-item-span-col-1-2 background-image pic-1">
-        <h3 class="text heading-3 color-wh text-shadow">Квартиры</h3>
-      </div>
-      <div class="grid-item-span-col-1-2 background-image pic-2">
-        <h3 class="heading-3 color-wh text-shadow">Коттеджа</h3>
-      </div>
-      <div class="grid-item-span-col-2-4 background-image pic-3">
-        <h3 class="heading-3 color-wh text-shadow">
-          Пищевых производств и теплиц
-        </h3>
-      </div>
-      <form class="form" id="apply" action="">
-        <div class="flex form-header">
-          <h2>Нужна очистка воды?</h2>
-          <p class="text">
-            Оставьте заявку — подберём фильтр и обеспечим чистую воду!
+
+    <div class="content">
+      <section class="advantages">
+        <div class="wrapper">
+          <h3 class="subtitle">Мы делаем воду чистой</h3>
+          <div class="advantages_items">
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/dostavka"
+                  ><img
+                    width="51"
+                    height="39"
+                    src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/credit-card.png"
+                    class="img-responsive"
+                    title="Способы оплаты"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Любой способ оплаты (НДС)</p>
+            </div>
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/dostavka"
+                  ><img
+                    width="51"
+                    height="33"
+                    src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/shipped.png"
+                    class="img-responsive"
+                    title="Быстрая доставка"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Быстрая доставка</p>
+            </div>
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/garantiya"
+                  ><img
+                    width="36"
+                    height="42"
+                    src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/shield.png"
+                    class="img-responsive"
+                    title="Гарантия"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Гарантия <br />1 год</p>
+            </div>
+            <div class="advantages_item">
+              <div class="header__advantages_item-icon">
+                <a href="https://filtromir.ru/contact"
+                  ><img
+                    width="42"
+                    height="40"
+                    src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/chat.png"
+                    class="img-responsive"
+                    title="Поддержка онлайн"
+                    alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                /></a>
+              </div>
+              <p>Экспертная поддержка</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sale">
+        <div class="wrapper">
+          <h2 class="title">ФИЛЬТРЫ ДЛЯ ВОДЫ ПО АКЦИИ</h2>
+          <div class="sale__slider slick-initialized slick-slider">
+            <button
+              class="slick-prev slick-arrow"
+              aria-label="Previous"
+              type="button"
+              style=""
+            >
+              Previous
+            </button>
+            <div class="slick-list draggable">
+              <div
+                class="slick-track"
+                style="
+                  opacity: 1;
+                  width: 4788px;
+                  transform: translate3d(-1140px, 0px, 0px);
+                "
+              >
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="-5"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="10339"
+                      data-name="Фильтр умягчитель 1354/Imrita Space"
+                      data-price="81200.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1354imrita-space"
+                        title="Купить Фильтр умягчитель 1354/Imrita Space за 81 200 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 1354/Imrita Space</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1354imrita-space"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1354/Imrita Space"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/10332_7.115x130.jpg?475196f455800e44b5361d445d40c9c2"
+                        alt="Фильтр умягчитель 1354/Imrita Space: 81 200 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1354/Imrita Space - купить с доставкой за 81 200 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        81 200 ₽
+                        <p class="old_price">94 270</p>
+                        <div class="p_sale">-14%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,4 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>75 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          ><br />Управление<b>: кнопки+wifi</b>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="10268"
+                          onclick=" add_tocart('10268'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="10339"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('10268'); $('#one_click_product_name').text('Фильтр умягчитель 1354/Imrita Space'); $('#one_click_product_price').text('81200.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="-4"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="8234"
+                      data-name="Обезжелезователь 1252/G30-С-SMM-DF"
+                      data-price="41950.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/obezzhelezovatel-1252g30-s-smm-df"
+                        title="Купить Обезжелезователь 1252/G30-С-SMM-DF за 41 950 руб."
+                        tabindex="-1"
+                        >Обезжелезователь 1252/G30-С-SMM-DF</a
+                      >
+                      <a
+                        href="products/obezzhelezovatel-1252g30-s-smm-df"
+                        class="overf ecommerce_click"
+                        title="Обезжелезователь 1252/G30-С-SMM-DF"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/8228_2.115x130.jpg?a541b5d9adbdaa85c4e1f71e506bc8f5"
+                        alt="Обезжелезователь 1252/G30-С-SMM-DF: 41 950 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Обезжелезователь 1252/G30-С-SMM-DF - купить с доставкой за 41 950 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        41 950 ₽
+                        <p class="old_price">60 060</p>
+                        <div class="p_sale">-31%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Удалит: марганец:&nbsp;<strong>5 мгэкв/л</strong
+                          >,&nbsp;Железо:&nbsp;<strong>15мл/л</strong>,&nbsp;<br />Производительность:
+                          <strong>0,9 м3/ч</strong><br />Объем загрузки:
+                          <strong>65 л&nbsp;</strong>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="8269"
+                          onclick=" add_tocart('8269'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="8234"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('8269'); $('#one_click_product_name').text('Обезжелезователь 1252/G30-С-SMM-DF'); $('#one_click_product_price').text('41950.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="-3"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="11566"
+                      data-name="Фильтр умягчитель 2в1 1252 rx"
+                      data-price="54210.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-2v1-1252-rx"
+                        title="Купить Фильтр умягчитель 2в1 1252 rx за 54 210 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 2в1 1252 rx</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-2v1-1252-rx"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 2в1 1252 rx"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/3506_4.115x130.jpg?b6e883326220c4cdf7480d4dd8240ab2"
+                        alt="Фильтр умягчитель 2в1 1252 rx: 54 210 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 2в1 1252 rx - купить с доставкой за 54 210 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        54 210 ₽
+                        <p class="old_price">69 500</p>
+                        <div class="p_sale">-22%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          ОЖ: до&nbsp;<strong>10 мгэкв/л</strong>, Жел: до
+                          <strong>2&nbsp;</strong
+                          ><br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="11513"
+                          onclick=" add_tocart('11513'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="11566"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('11513'); $('#one_click_product_name').text('Фильтр умягчитель 2в1 1252 rx'); $('#one_click_product_price').text('54210.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="-2"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="2200"
+                      data-name="Фильтр умягчитель 1252"
+                      data-price="46690.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1252"
+                        title="Купить Фильтр умягчитель 1252 за 46 690 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 1252</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1252"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1252"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/3506_4.115x130.jpg?b6e883326220c4cdf7480d4dd8240ab2"
+                        alt="Фильтр умягчитель 1252: 46 690 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1252 - купить с доставкой за 46 690 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        46 690 ₽
+                        <p class="old_price">61 500</p>
+                        <div class="p_sale">-25%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="2219"
+                          onclick=" add_tocart('2219'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="2200"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('2219'); $('#one_click_product_name').text('Фильтр умягчитель 1252'); $('#one_click_product_price').text('46690.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="-1"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="955"
+                      data-name="Корпус Гейзер 20ВВ прозрачный"
+                      data-price="9200.00"
+                      data-brand="Гейзер"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/korpus-geizer-20BB-prozrachnyj"
+                        title="Купить Корпус Гейзер 20ВВ прозрачный за 9 200 руб."
+                        tabindex="-1"
+                        >Корпус Гейзер 20ВВ прозрачный</a
+                      >
+                      <a
+                        href="products/korpus-geizer-20BB-prozrachnyj"
+                        class="overf ecommerce_click"
+                        title="Корпус Гейзер 20ВВ прозрачный"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/korpus-geizer-20bb-prozrachniy.115x130.jpg?20c445a2b1df500cfaa6c2e3a57f4426"
+                        alt="Корпус Гейзер 20ВВ прозрачный: 9 200 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Корпус Гейзер 20ВВ прозрачный - купить с доставкой за 9 200 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        9 200 ₽
+                        <p class="old_price">11 370</p>
+                        <div class="p_sale">-20%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          <span>Прозрачный, для&nbsp;</span
+                          ><span style="color: #000080"
+                            ><strong>холодной</strong>&nbsp;<strong
+                              >воды</strong
+                            ></span
+                          ><br /><span>Тип&nbsp;корпуса&nbsp; Big Blue 20"</span
+                          ><br /><span>Соединительный размер 1"</span>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700"> </span>
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="965"
+                          onclick=" add_tocart('965'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="955"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('965'); $('#one_click_product_name').text('Корпус Гейзер 20ВВ прозрачный'); $('#one_click_product_price').text('9200.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-current slick-active"
+                  data-slick-index="0"
+                  aria-hidden="false"
+                  style="width: 212px"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="7619"
+                      data-name="RO3-3013 SibFm 180л/ч"
+                      data-price="92000.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/ro3-3013-sibfm-180lch"
+                        title="Купить RO3-3013 SibFm 180л/ч за 92 000 руб."
+                        tabindex="0"
+                        >RO3-3013 SibFm 180л/ч</a
+                      >
+                      <a
+                        href="products/ro3-3013-sibfm-180lch"
+                        class="overf ecommerce_click"
+                        title="RO3-3013 SibFm 180л/ч"
+                        tabindex="0"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/ro-180-front.115x130.jpg?1830e87dcdcccd3cad3a3fc05256f059"
+                        alt="RO3-3013 SibFm 180л/ч: 92 000 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды RO3-3013 SibFm 180л/ч - купить с доставкой за 92 000 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        92 000 ₽
+                        <p class="old_price">105 530</p>
+                        <div class="p_sale">-13%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Производ-ть: <b>180 л/ч</b><br />Мембраны:
+                          <strong>&nbsp;3шт</strong>&nbsp;<strong>3013</strong
+                          ><br />Питание:&nbsp;<strong>220 В, 50Гц</strong
+                          ><br />Мощность уст-вки:&nbsp;<strong>1,1 кВт</strong>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="0"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="0"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка РНД</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="7654"
+                          onclick=" add_tocart('7654'); return false;"
+                          tabindex="0"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_7619"
+                          data-id="7619"
+                          tabindex="0"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('7654'); $('#one_click_product_name').text('RO3-3013 SibFm 180л/ч'); $('#one_click_product_price').text('92000.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="0"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-active"
+                  data-slick-index="1"
+                  aria-hidden="false"
+                  style="width: 212px"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="9442"
+                      data-name="RO1-4040 SibFm-Lite 250л/ч"
+                      data-price="199900.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/ro1-4040-sibfm-lite-250lch"
+                        title="Купить RO1-4040 SibFm-Lite 250л/ч за 199 900 руб."
+                        tabindex="0"
+                        >RO1-4040 SibFm-Lite 250л/ч</a
+                      >
+                      <a
+                        href="products/ro1-4040-sibfm-lite-250lch"
+                        class="overf ecommerce_click"
+                        title="RO1-4040 SibFm-Lite 250л/ч"
+                        tabindex="0"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/front_web-1.115x130.jpg?867be08848b8c3fe41ec832ffe7ec3f6"
+                        alt="RO1-4040 SibFm-Lite 250л/ч: 199 900 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды RO1-4040 SibFm-Lite 250л/ч - купить с доставкой за 199 900 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        199 900 ₽
+                        <p class="old_price">230 000</p>
+                        <div class="p_sale">-14%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Производ-ть : <strong>250 л/ч</strong><br />Мембраны:
+                          <strong>1 шт&nbsp;4040</strong
+                          ><br />Питание:&nbsp;<strong>220 В, 50 Гц</strong
+                          ><br />Мощность уст-вки<strong
+                            >:&nbsp;<strong>2.2 кВт</strong></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="0"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="0"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка РНД</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="9499"
+                          onclick=" add_tocart('9499'); return false;"
+                          tabindex="0"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_9442"
+                          data-id="9442"
+                          tabindex="0"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('9499'); $('#one_click_product_name').text('RO1-4040 SibFm-Lite 250л/ч'); $('#one_click_product_price').text('199900.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="0"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-active"
+                  data-slick-index="2"
+                  aria-hidden="false"
+                  style="width: 212px"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="8233"
+                      data-name="Фильтр умягчитель 1252/G30-С-SMM-DF"
+                      data-price="63120.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1252g30-s-smm-df"
+                        title="Купить Фильтр умягчитель 1252/G30-С-SMM-DF за 63 120 руб."
+                        tabindex="0"
+                        >Фильтр умягчитель 1252/G30-С-SMM-DF</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1252g30-s-smm-df"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1252/G30-С-SMM-DF"
+                        tabindex="0"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/10327_5.115x130.jpg?4cbe29912cb5a0d3363799cbf97cd4a4"
+                        alt="Фильтр умягчитель 1252/G30-С-SMM-DF: 63 120 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1252/G30-С-SMM-DF - купить с доставкой за 63 120 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        63 120 ₽
+                        <p class="old_price">87 290</p>
+                        <div class="p_sale">-28%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="0"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="0"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="8268"
+                          onclick=" add_tocart('8268'); return false;"
+                          tabindex="0"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_8233"
+                          data-id="8233"
+                          tabindex="0"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('8268'); $('#one_click_product_name').text('Фильтр умягчитель 1252/G30-С-SMM-DF'); $('#one_click_product_price').text('63120.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="0"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-active"
+                  data-slick-index="3"
+                  aria-hidden="false"
+                  style="width: 212px"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="10339"
+                      data-name="Фильтр умягчитель 1354/Imrita Space"
+                      data-price="81200.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1354imrita-space"
+                        title="Купить Фильтр умягчитель 1354/Imrita Space за 81 200 руб."
+                        tabindex="0"
+                        >Фильтр умягчитель 1354/Imrita Space</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1354imrita-space"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1354/Imrita Space"
+                        tabindex="0"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/10332_7.115x130.jpg?475196f455800e44b5361d445d40c9c2"
+                        alt="Фильтр умягчитель 1354/Imrita Space: 81 200 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1354/Imrita Space - купить с доставкой за 81 200 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        81 200 ₽
+                        <p class="old_price">94 270</p>
+                        <div class="p_sale">-14%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,4 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>75 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          ><br />Управление<b>: кнопки+wifi</b>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="0"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="0"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="10268"
+                          onclick=" add_tocart('10268'); return false;"
+                          tabindex="0"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_10339"
+                          data-id="10339"
+                          tabindex="0"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('10268'); $('#one_click_product_name').text('Фильтр умягчитель 1354/Imrita Space'); $('#one_click_product_price').text('81200.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="0"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-active"
+                  data-slick-index="4"
+                  aria-hidden="false"
+                  style="width: 212px"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="8234"
+                      data-name="Обезжелезователь 1252/G30-С-SMM-DF"
+                      data-price="41950.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/obezzhelezovatel-1252g30-s-smm-df"
+                        title="Купить Обезжелезователь 1252/G30-С-SMM-DF за 41 950 руб."
+                        tabindex="0"
+                        >Обезжелезователь 1252/G30-С-SMM-DF</a
+                      >
+                      <a
+                        href="products/obezzhelezovatel-1252g30-s-smm-df"
+                        class="overf ecommerce_click"
+                        title="Обезжелезователь 1252/G30-С-SMM-DF"
+                        tabindex="0"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/8228_2.115x130.jpg?a541b5d9adbdaa85c4e1f71e506bc8f5"
+                        alt="Обезжелезователь 1252/G30-С-SMM-DF: 41 950 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Обезжелезователь 1252/G30-С-SMM-DF - купить с доставкой за 41 950 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        41 950 ₽
+                        <p class="old_price">60 060</p>
+                        <div class="p_sale">-31%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Удалит: марганец:&nbsp;<strong>5 мгэкв/л</strong
+                          >,&nbsp;Железо:&nbsp;<strong>15мл/л</strong>,&nbsp;<br />Производительность:
+                          <strong>0,9 м3/ч</strong><br />Объем загрузки:
+                          <strong>65 л&nbsp;</strong>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="0"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="0"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="8269"
+                          onclick=" add_tocart('8269'); return false;"
+                          tabindex="0"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_8234"
+                          data-id="8234"
+                          tabindex="0"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('8269'); $('#one_click_product_name').text('Обезжелезователь 1252/G30-С-SMM-DF'); $('#one_click_product_price').text('41950.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="0"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide"
+                  data-slick-index="5"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="11566"
+                      data-name="Фильтр умягчитель 2в1 1252 rx"
+                      data-price="54210.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-2v1-1252-rx"
+                        title="Купить Фильтр умягчитель 2в1 1252 rx за 54 210 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 2в1 1252 rx</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-2v1-1252-rx"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 2в1 1252 rx"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/3506_4.115x130.jpg?b6e883326220c4cdf7480d4dd8240ab2"
+                        alt="Фильтр умягчитель 2в1 1252 rx: 54 210 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 2в1 1252 rx - купить с доставкой за 54 210 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        54 210 ₽
+                        <p class="old_price">69 500</p>
+                        <div class="p_sale">-22%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          ОЖ: до&nbsp;<strong>10 мгэкв/л</strong>, Жел: до
+                          <strong>2&nbsp;</strong
+                          ><br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="11513"
+                          onclick=" add_tocart('11513'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_11566"
+                          data-id="11566"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('11513'); $('#one_click_product_name').text('Фильтр умягчитель 2в1 1252 rx'); $('#one_click_product_price').text('54210.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide"
+                  data-slick-index="6"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="2200"
+                      data-name="Фильтр умягчитель 1252"
+                      data-price="46690.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1252"
+                        title="Купить Фильтр умягчитель 1252 за 46 690 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 1252</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1252"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1252"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/3506_4.115x130.jpg?b6e883326220c4cdf7480d4dd8240ab2"
+                        alt="Фильтр умягчитель 1252: 46 690 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1252 - купить с доставкой за 46 690 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        46 690 ₽
+                        <p class="old_price">61 500</p>
+                        <div class="p_sale">-25%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="2219"
+                          onclick=" add_tocart('2219'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_2200"
+                          data-id="2200"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('2219'); $('#one_click_product_name').text('Фильтр умягчитель 1252'); $('#one_click_product_price').text('46690.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide"
+                  data-slick-index="7"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="955"
+                      data-name="Корпус Гейзер 20ВВ прозрачный"
+                      data-price="9200.00"
+                      data-brand="Гейзер"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/korpus-geizer-20BB-prozrachnyj"
+                        title="Купить Корпус Гейзер 20ВВ прозрачный за 9 200 руб."
+                        tabindex="-1"
+                        >Корпус Гейзер 20ВВ прозрачный</a
+                      >
+                      <a
+                        href="products/korpus-geizer-20BB-prozrachnyj"
+                        class="overf ecommerce_click"
+                        title="Корпус Гейзер 20ВВ прозрачный"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/korpus-geizer-20bb-prozrachniy.115x130.jpg?20c445a2b1df500cfaa6c2e3a57f4426"
+                        alt="Корпус Гейзер 20ВВ прозрачный: 9 200 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Корпус Гейзер 20ВВ прозрачный - купить с доставкой за 9 200 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        9 200 ₽
+                        <p class="old_price">11 370</p>
+                        <div class="p_sale">-20%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          <span>Прозрачный, для&nbsp;</span
+                          ><span style="color: #000080"
+                            ><strong>холодной</strong>&nbsp;<strong
+                              >воды</strong
+                            ></span
+                          ><br /><span>Тип&nbsp;корпуса&nbsp; Big Blue 20"</span
+                          ><br /><span>Соединительный размер 1"</span>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700"> </span>
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="965"
+                          onclick=" add_tocart('965'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id="compare_955"
+                          data-id="955"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('965'); $('#one_click_product_name').text('Корпус Гейзер 20ВВ прозрачный'); $('#one_click_product_price').text('9200.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="8"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="7619"
+                      data-name="RO3-3013 SibFm 180л/ч"
+                      data-price="92000.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/ro3-3013-sibfm-180lch"
+                        title="Купить RO3-3013 SibFm 180л/ч за 92 000 руб."
+                        tabindex="-1"
+                        >RO3-3013 SibFm 180л/ч</a
+                      >
+                      <a
+                        href="products/ro3-3013-sibfm-180lch"
+                        class="overf ecommerce_click"
+                        title="RO3-3013 SibFm 180л/ч"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/ro-180-front.115x130.jpg?1830e87dcdcccd3cad3a3fc05256f059"
+                        alt="RO3-3013 SibFm 180л/ч: 92 000 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды RO3-3013 SibFm 180л/ч - купить с доставкой за 92 000 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        92 000 ₽
+                        <p class="old_price">105 530</p>
+                        <div class="p_sale">-13%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Производ-ть: <b>180 л/ч</b><br />Мембраны:
+                          <strong>&nbsp;3шт</strong>&nbsp;<strong>3013</strong
+                          ><br />Питание:&nbsp;<strong>220 В, 50Гц</strong
+                          ><br />Мощность уст-вки:&nbsp;<strong>1,1 кВт</strong>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка РНД</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="7654"
+                          onclick=" add_tocart('7654'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="7619"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('7654'); $('#one_click_product_name').text('RO3-3013 SibFm 180л/ч'); $('#one_click_product_price').text('92000.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="9"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="9442"
+                      data-name="RO1-4040 SibFm-Lite 250л/ч"
+                      data-price="199900.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/ro1-4040-sibfm-lite-250lch"
+                        title="Купить RO1-4040 SibFm-Lite 250л/ч за 199 900 руб."
+                        tabindex="-1"
+                        >RO1-4040 SibFm-Lite 250л/ч</a
+                      >
+                      <a
+                        href="products/ro1-4040-sibfm-lite-250lch"
+                        class="overf ecommerce_click"
+                        title="RO1-4040 SibFm-Lite 250л/ч"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/front_web-1.115x130.jpg?867be08848b8c3fe41ec832ffe7ec3f6"
+                        alt="RO1-4040 SibFm-Lite 250л/ч: 199 900 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды RO1-4040 SibFm-Lite 250л/ч - купить с доставкой за 199 900 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        199 900 ₽
+                        <p class="old_price">230 000</p>
+                        <div class="p_sale">-14%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Производ-ть : <strong>250 л/ч</strong><br />Мембраны:
+                          <strong>1 шт&nbsp;4040</strong
+                          ><br />Питание:&nbsp;<strong>220 В, 50 Гц</strong
+                          ><br />Мощность уст-вки<strong
+                            >:&nbsp;<strong>2.2 кВт</strong></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка РНД</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="9499"
+                          onclick=" add_tocart('9499'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="9442"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('9499'); $('#one_click_product_name').text('RO1-4040 SibFm-Lite 250л/ч'); $('#one_click_product_price').text('199900.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="10"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="8233"
+                      data-name="Фильтр умягчитель 1252/G30-С-SMM-DF"
+                      data-price="63120.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1252g30-s-smm-df"
+                        title="Купить Фильтр умягчитель 1252/G30-С-SMM-DF за 63 120 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 1252/G30-С-SMM-DF</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1252g30-s-smm-df"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1252/G30-С-SMM-DF"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/10327_5.115x130.jpg?4cbe29912cb5a0d3363799cbf97cd4a4"
+                        alt="Фильтр умягчитель 1252/G30-С-SMM-DF: 63 120 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1252/G30-С-SMM-DF - купить с доставкой за 63 120 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        63 120 ₽
+                        <p class="old_price">87 290</p>
+                        <div class="p_sale">-28%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="8268"
+                          onclick=" add_tocart('8268'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="8233"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('8268'); $('#one_click_product_name').text('Фильтр умягчитель 1252/G30-С-SMM-DF'); $('#one_click_product_price').text('63120.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="11"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="10339"
+                      data-name="Фильтр умягчитель 1354/Imrita Space"
+                      data-price="81200.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1354imrita-space"
+                        title="Купить Фильтр умягчитель 1354/Imrita Space за 81 200 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 1354/Imrita Space</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1354imrita-space"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1354/Imrita Space"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/10332_7.115x130.jpg?475196f455800e44b5361d445d40c9c2"
+                        alt="Фильтр умягчитель 1354/Imrita Space: 81 200 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1354/Imrita Space - купить с доставкой за 81 200 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        81 200 ₽
+                        <p class="old_price">94 270</p>
+                        <div class="p_sale">-14%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,4 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>75 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          ><br />Управление<b>: кнопки+wifi</b>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="10268"
+                          onclick=" add_tocart('10268'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="10339"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('10268'); $('#one_click_product_name').text('Фильтр умягчитель 1354/Imrita Space'); $('#one_click_product_price').text('81200.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="12"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="8234"
+                      data-name="Обезжелезователь 1252/G30-С-SMM-DF"
+                      data-price="41950.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/obezzhelezovatel-1252g30-s-smm-df"
+                        title="Купить Обезжелезователь 1252/G30-С-SMM-DF за 41 950 руб."
+                        tabindex="-1"
+                        >Обезжелезователь 1252/G30-С-SMM-DF</a
+                      >
+                      <a
+                        href="products/obezzhelezovatel-1252g30-s-smm-df"
+                        class="overf ecommerce_click"
+                        title="Обезжелезователь 1252/G30-С-SMM-DF"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/8228_2.115x130.jpg?a541b5d9adbdaa85c4e1f71e506bc8f5"
+                        alt="Обезжелезователь 1252/G30-С-SMM-DF: 41 950 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Обезжелезователь 1252/G30-С-SMM-DF - купить с доставкой за 41 950 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        41 950 ₽
+                        <p class="old_price">60 060</p>
+                        <div class="p_sale">-31%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Удалит: марганец:&nbsp;<strong>5 мгэкв/л</strong
+                          >,&nbsp;Железо:&nbsp;<strong>15мл/л</strong>,&nbsp;<br />Производительность:
+                          <strong>0,9 м3/ч</strong><br />Объем загрузки:
+                          <strong>65 л&nbsp;</strong>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="8269"
+                          onclick=" add_tocart('8269'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="8234"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('8269'); $('#one_click_product_name').text('Обезжелезователь 1252/G30-С-SMM-DF'); $('#one_click_product_price').text('41950.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="13"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="11566"
+                      data-name="Фильтр умягчитель 2в1 1252 rx"
+                      data-price="54210.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-2v1-1252-rx"
+                        title="Купить Фильтр умягчитель 2в1 1252 rx за 54 210 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 2в1 1252 rx</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-2v1-1252-rx"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 2в1 1252 rx"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/3506_4.115x130.jpg?b6e883326220c4cdf7480d4dd8240ab2"
+                        alt="Фильтр умягчитель 2в1 1252 rx: 54 210 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 2в1 1252 rx - купить с доставкой за 54 210 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        54 210 ₽
+                        <p class="old_price">69 500</p>
+                        <div class="p_sale">-22%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          ОЖ: до&nbsp;<strong>10 мгэкв/л</strong>, Жел: до
+                          <strong>2&nbsp;</strong
+                          ><br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="11513"
+                          onclick=" add_tocart('11513'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="11566"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('11513'); $('#one_click_product_name').text('Фильтр умягчитель 2в1 1252 rx'); $('#one_click_product_price').text('54210.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="14"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="2200"
+                      data-name="Фильтр умягчитель 1252"
+                      data-price="46690.00"
+                      data-brand="ФильтроМир"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/filtr-umyagchitel-1252"
+                        title="Купить Фильтр умягчитель 1252 за 46 690 руб."
+                        tabindex="-1"
+                        >Фильтр умягчитель 1252</a
+                      >
+                      <a
+                        href="products/filtr-umyagchitel-1252"
+                        class="overf ecommerce_click"
+                        title="Фильтр умягчитель 1252"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/3506_4.115x130.jpg?b6e883326220c4cdf7480d4dd8240ab2"
+                        alt="Фильтр умягчитель 1252: 46 690 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Фильтр умягчитель 1252 - купить с доставкой за 46 690 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        46 690 ₽
+                        <p class="old_price">61 500</p>
+                        <div class="p_sale">-25%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          Жесткость: до&nbsp;<strong>14 мгэкв/л</strong
+                          >,<br />Производительность:&nbsp;<strong
+                            >1,2 м3/ч</strong
+                          ><br />Объем загрузки:&nbsp;<strong>65 л&nbsp;</strong
+                          >-<strong
+                            >&nbsp;<strong
+                              ><strong>Смола ионообменная</strong></strong
+                            ></strong
+                          >
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700">
+                          Экспресс доставка</span
+                        >
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="2219"
+                          onclick=" add_tocart('2219'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="2200"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('2219'); $('#one_click_product_name').text('Фильтр умягчитель 1252'); $('#one_click_product_price').text('46690.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="slick-slide slick-cloned"
+                  data-slick-index="15"
+                  aria-hidden="true"
+                  style="width: 212px"
+                  tabindex="-1"
+                >
+                  <div>
+                    <div
+                      class="cart__item_wrapper"
+                      data-id="955"
+                      data-name="Корпус Гейзер 20ВВ прозрачный"
+                      data-price="9200.00"
+                      data-brand="Гейзер"
+                      data-category=""
+                      data-list="Category"
+                      style="width: 100%; display: inline-block"
+                    >
+                      <a
+                        class="cart__item_title ecommerce_click"
+                        href="products/korpus-geizer-20BB-prozrachnyj"
+                        title="Купить Корпус Гейзер 20ВВ прозрачный за 9 200 руб."
+                        tabindex="-1"
+                        >Корпус Гейзер 20ВВ прозрачный</a
+                      >
+                      <a
+                        href="products/korpus-geizer-20BB-prozrachnyj"
+                        class="overf ecommerce_click"
+                        title="Корпус Гейзер 20ВВ прозрачный"
+                        tabindex="-1"
+                      ></a>
+
+                      <img
+                        src="https://filtromir.ru/files/products/korpus-geizer-20bb-prozrachniy.115x130.jpg?20c445a2b1df500cfaa6c2e3a57f4426"
+                        alt="Корпус Гейзер 20ВВ прозрачный: 9 200 руб., Ростов-на-Дону, Краснодар фото, отзывы"
+                        class="img-responsive prod_imgs"
+                        title="Фильтр для воды Корпус Гейзер 20ВВ прозрачный - купить с доставкой за 9 200 руб., смотреть полное описание..."
+                      />
+                      <div class="cart__item_price">
+                        9 200 ₽
+                        <p class="old_price">11 370</p>
+                        <div class="p_sale">-20%</div>
+                      </div>
+                      <div class="cart__item_text">
+                        <p>
+                          <span>Прозрачный, для&nbsp;</span
+                          ><span style="color: #000080"
+                            ><strong>холодной</strong>&nbsp;<strong
+                              >воды</strong
+                            ></span
+                          ><br /><span>Тип&nbsp;корпуса&nbsp; Big Blue 20"</span
+                          ><br /><span>Соединительный размер 1"</span>
+                        </p>
+                        <a
+                          href="https://filtromir.ru/catalog/servis-filtra-dlya-vody"
+                          target="_blank"
+                          tabindex="-1"
+                          >Можем установить</a
+                        >
+                        <br /><a
+                          href="https://filtromir.ru/dostavka"
+                          target="_blank"
+                          tabindex="-1"
+                          >Доставка: </a
+                        ><span style="color: red; font-weight: 700">
+                          бесплатно</span
+                        >;<br />
+                        <span style="color: green; font-weight: 700"> </span>
+                      </div>
+                      <div class="cart__item_button">
+                        <a
+                          href="#cart__click"
+                          class="btn btn__cart open_modal ecommerce_add"
+                          data-variant_id="965"
+                          onclick=" add_tocart('965'); return false;"
+                          tabindex="-1"
+                          >В корзину</a
+                        >
+                        <a
+                          href="compare"
+                          class="acompare btn btn__icon"
+                          id=""
+                          data-id="955"
+                          tabindex="-1"
+                          ><img
+                            width="19"
+                            height="13"
+                            src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics_blue.png"
+                            class="img-responsive"
+                            title="Добавить в сравнение"
+                            alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                        /></a>
+                      </div>
+                      <a
+                        href="#one__click"
+                        onclick="$('#one_click_variant_id').val('965'); $('#one_click_product_name').text('Корпус Гейзер 20ВВ прозрачный'); $('#one_click_product_price').text('9200.00'); return true;"
+                        class="btn btn__click open_modal"
+                        tabindex="-1"
+                        >Заказ в один клик</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="slick-next slick-arrow"
+              aria-label="Next"
+              type="button"
+              style=""
+            >
+              Next
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section default-container">
+        <div class="section__subtitle">
+          <h2>Фильтры для:</h2>
+        </div>
+        <div class="categories_grid">
+          <div class="grid-item-span-col-1-2 background-image pic-1">
+            <h3 class="text heading-3 color-wh text-shadow bold">Квартиры</h3>
+          </div>
+          <div class="grid-item-span-col-1-2 background-image pic-2">
+            <h3 class="heading-3 color-wh text-shadow bold">Коттеджа</h3>
+          </div>
+          <div class="grid-item-span-col-2-4 background-image pic-3">
+            <h3 class="heading-3 color-wh text-shadow bold">
+              Пищевых производств и теплиц
+            </h3>
+          </div>
+          <form class="form" id="apply" action="">
+            <div class="flex form-header">
+              <h2 class="heading-2">Нужна очистка воды?</h2>
+              <p class="text">
+                Оставьте заявку — подберём фильтр и обеспечим чистую воду!
+              </p>
+            </div>
+            <div class="flex form-body">
+              <input
+                name="name"
+                type="text"
+                autocomplete="name"
+                placeholder="*Имя"
+                class="custom-input"
+                required
+              />
+              <input
+                name="phone"
+                type="text"
+                autocomplete="phone"
+                placeholder="*Телефон"
+                class="custom-input"
+                required
+              />
+              <input
+                name="comment"
+                type="text"
+                autocomplete="organization"
+                placeholder="Комментарий (необязательно)"
+                class="custom-input"
+              />
+            </div>
+            <div class="flex form-footer">
+              <label class="custom-checkbox">
+                <input name="privacy" type="checkbox" required />
+                <span class="checkmark"></span>
+                Я принимаю условия передачи информации.
+              </label>
+              <button class="button bold" type="submit">Оставить заявку</button>
+            </div>
+          </form>
+          <div class="background-image pic-4">
+            <h3 class="heading-3 color-wh text-shadow bold">Котельной</h3>
+          </div>
+          <div class="background-image pic-5">
+            <h3 class="heading-3 color-wh text-shadow bold">HoReCa</h3>
+          </div>
+          <div class="grid-item-span-col-2-4 background-image pic-6">
+            <h3 class="heading-3 color-wh text-shadow bold">
+              Автомоек и химчисток
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="section__subtitle">
+          <h2>Часто спрашивают</h2>
+        </div>
+        <div class="wrapper">
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/osmos80.png"
+              class="img-responsive cats_i"
+              title="фильтры обратный осмос ростов краснодар"
+              alt="Фильтры обратного осмоса для воды в Ростове-на-Дону и Краснодаре по самым низким ценам"
+            /><a
+              href="/catalog/filtr-obratnogo-osmosa"
+              class="categories__item_title"
+              >Обратный осмос</a
+            >
+            <ul class="categories__item_text">
+              <li>Отдельный кран для воды</li>
+              <li>Устанавливается под мойку</li>
+              <li>Очищает воду на 99%</li>
+            </ul>
+            <a href="/catalog/filtr-obratnogo-osmosa" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/troika80.png"
+              class="img-responsive cats_i"
+              title="проточные фильтры три ступени"
+              alt="Фильтры проточные под мойку для воды в Ростове-на-Дону по самым низким ценам"
+            /><a href="/catalog/filtry-pod-mojku" class="categories__item_title"
+              >Проточные фильтры</a
+            >
+            <ul class="categories__item_text">
+              <li>Отдельный кран для воды</li>
+              <li>Устанавливается под мойку</li>
+              <li>Различные назначения</li>
+            </ul>
+            <a href="/catalog/filtry-pod-mojku" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/icon3.png"
+              class="img-responsive cats_i"
+              title="Настольные фильтры ростов и краснодар"
+              alt="Фильтры настольные для воды в Ростове-на-Дону по самым низким ценам"
+            /><a href="/catalog/nastolnye-filtry" class="categories__item_title"
+              >Настольные фильтры</a
+            >
+            <ul class="categories__item_text">
+              <li>Прост в установке</li>
+              <li>Устанавливается на мойке</li>
+              <li>Легко перевозить</li>
+            </ul>
+            <a href="/catalog/nastolnye-filtry" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/osmos-prom80.png"
+              class="img-responsive cats_i"
+              title="промышленные фильтры обратного осмоса в ростове и краснодаре"
+              alt="Фильтры промышленного осмоса для воды в Ростове-на-Дону и Краснодаре по самым низким ценам"
+            /><a
+              href="/catalog/promishlenniy-osmos"
+              class="categories__item_title"
+              >Промышленный осмос</a
+            >
+            <ul class="categories__item_text">
+              <li>Высокая скорость работы</li>
+              <li>Фильтры для производства</li>
+              <li>Подходят для любой воды</li>
+            </ul>
+            <a href="/catalog/promishlenniy-osmos" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/um80.png"
+              class="img-responsive cats_i"
+              title="фильтры умягчители и фильтры обезжелезователи в ростове и краснодаре"
+              alt="Фильтры умягчители для воды в Ростове-на-Дону и Краснодрае по самым низким ценам"
+            /><a
+              href="/catalog/filtry-na-ves-dom"
+              class="categories__item_title"
+              >Фильтры умягчители</a
+            >
+            <ul class="categories__item_text">
+              <li>Смягчение воды</li>
+              <li>Удаление железа</li>
+              <li>Автоматическая прочистка</li>
+            </ul>
+            <a href="/catalog/filtry-na-ves-dom" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/magistralka80.png"
+              class="img-responsive cats_i"
+              title="магистральные фильтры, натрубные фильтры в ростове и краснода
+      ре"
+              alt="Фильтры магистарльные и натрубные для воды в Ростове-на-Дону и Краснодаре по самым низким ценам"
+            /><a
+              href="catalog/magistralnye-filtry"
+              class="categories__item_title"
+              >Магистральные фильтры</a
+            >
+            <ul class="categories__item_text">
+              <li>Натрубные фильтры</li>
+              <li>Предочистка воды</li>
+              <li>Защита бытовой техники</li>
+            </ul>
+            <a href="catalog/magistralnye-filtry" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/kartridgi80.png"
+              class="img-responsive cats_i"
+              title="Картриджи для воды, сменные фильтры в ростове и краснодаре"
+              alt="Сменные картриджи для воды в Ростове-на-Дону и Краснодаре по самым низким ценам"
+            /><a href="catalog/smennye-filtry" class="categories__item_title"
+              >Сменные картриджи</a
+            >
+            <ul class="categories__item_text">
+              <li>Картриджи для фильтров</li>
+              <li>Мембраны для осмоса</li>
+              <li>Фильтрующие загрузки</li>
+            </ul>
+            <a href="catalog/smennye-filtry" class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+          <div class="categories__item">
+            <img
+              width="80"
+              height="80"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/images/kompl80.png"
+              class="img-responsive cats_i"
+              title="Комплектующие и запчасти для фильтров в Ростове и Краснодаре"
+              alt="Запчасти для фильтров воды в Ростове-на-Дону и краснодаре по самым низким ценам"
+            /><a
+              href="/catalog/komplektuyuschie-k-filtram"
+              class="categories__item_title"
+              >Комплектующие для фильтра</a
+            >
+            <ul class="categories__item_text">
+              <li>Краны фильтров для воды</li>
+              <li>Фитинги и запчасти</li>
+              <li>Насосы и баки для осмоса</li>
+            </ul>
+            <a
+              href="/catalog/komplektuyuschie-k-filtram"
+              class="btn btn__details"
+              >Перейти</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="brands">
+        <div class="wrapper">
+          <div class="section__subtitle"><h2>НАШИ БРЕНДЫ</h2></div>
+          <div class="brs">
+            <a
+              class="bruls"
+              href="/brands/akvafor"
+              title="Фильтры для очистки воды Аквафор"
+              ><img
+                src="https://filtromir.ru//files/uploads/aquaphor-banner.jpg"
+                width="125"
+                height="24"
+                alt="Фильтры для воды Аквафор"
+                title="Фильтры для очистки воды Аквафор"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/atoll"
+              title="Фильтры для очистки воды Atoll"
+              ><img
+                src="https://filtromir.ru//files/uploads/atoll-banner.jpg"
+                width="81"
+                height="32"
+                alt="Фильтры для очистки воды Атолл"
+                title="Фильтры для очистки воды Atoll"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/barer"
+              title="Фильтры для очистки воды Барьер"
+              ><img
+                src="https://filtromir.ru//files/uploads/barier-banner.jpg"
+                width="125"
+                height="31"
+                alt="Фильтры для воды Барьер"
+                title="Фильтры для очистки воды Барьер"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a class="bruls" href="/brands/vontron" title="Мембраны Vontron"
+              ><img
+                src="https://filtromir.ru//files/uploads/vontron-banner.jpg"
+                width="125"
+                height="28"
+                alt="Мембраны Vontron"
+                title="Мембраны Вонтрон"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/raifil"
+              title="Фильтры для очистки воды Raifil"
+              ><img
+                src="https://filtromir.ru//files/uploads/raifil-banner.jpg"
+                width="65"
+                height="32"
+                alt="Фильтры для воды Raifil"
+                title="Фильтры для воды Райфил"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/filmtec"
+              title="Мембранные картриджи Filmtec"
+              ><img
+                src="https://filtromir.ru//files/uploads/filmtec-banner.jpg"
+                width="105"
+                height="27"
+                alt="Мембраны Filmtec"
+                title="Мембраны Filmtec"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/gejzer"
+              title="Фильтры для очистки воды Гейзер"
+              ><img
+                src="https://filtromir.ru//files/uploads/geizer-banner.jpg"
+                width="125"
+                height="79"
+                alt="Фильтры для воды Гейзер"
+                title="Фильтры для очистки воды Гейзер"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/angstra"
+              title="Фильтр для очистки воды Angstra"
+              ><img
+                src="https://filtromir.ru//files/uploads/Angstra.png"
+                width="85"
+                height="36"
+                alt="Фильтры для воды Аngstra"
+                title="Фильтры для очистки воды Аngstra"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/atlas"
+              title="Фильтры для очистки воды Atlas Filtri"
+              ><img
+                src="https://filtromir.ru//files/uploads/atlas-banner.jpg"
+                width="120"
+                height="29"
+                alt="Фильтры для воды Atlas"
+                title="Фильтры для очистки воды Атлас"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/sterilight"
+              title="Ультрафиолетовые лампы для воды Sterilight"
+              ><img
+                src="https://filtromir.ru//files/uploads/Sterilight-banner.jpg"
+                width="130"
+                height="23"
+                alt="Ультрафиолетовые стерилизаторы воды Sterilight"
+                title="Ультрафиолетовые лампы Стерилайт"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/aquafilter"
+              title="Фильтры для очистки воды AquaFilter"
+              ><img
+                src="https://filtromir.ru//files/uploads/aquafilter_logo.jpg"
+                width="92"
+                height="75"
+                alt="Фильтры для воды AquaFilter"
+                title="Фильтры для очистки воды Аквафильтер"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+            <a
+              class="bruls"
+              href="/brands/novaya_voda"
+              title="Фильтры для воды Новая Вода"
+              ><img
+                src="https://filtromir.ru//files/uploads/_novaya-voda.jpg"
+                width="98"
+                height="75"
+                alt="Фильтры для воды Новая Вода"
+                title="Фильтры для очистки воды НоваяВода"
+                style="display: block; margin-left: auto; margin-right: auto"
+            /></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="wrapper">
+          <div class="section__subtitle">
+            <a href="/blog"> <h2>ПОЛЕЗНАЯ ИНФОРМАЦИЯ</h2></a>
+          </div>
+          <div class="news__wrapper">
+            <div class="news__wrapper_item">
+              <a
+                href="blog/servisnoe-obsluzhivanie-filtrov-dlya-vody-v-gostinitse-v-krasnodare"
+                class="news__wrapper_item-img"
+              >
+                <img
+                  src="https://filtromir.ru/files/posts/img1707251.jpg"
+                  class="img-responsive"
+                  title="Сервисное обслуживание фильтров для воды в гостинице в Краснодаре"
+                  alt="Сервисное обслуживание фильтров для воды в гостинице в Краснодаре"
+                />
+              </a>
+              <a
+                href="blog/servisnoe-obsluzhivanie-filtrov-dlya-vody-v-gostinitse-v-krasnodare"
+                class="news__wrapper_item-title"
+                >Сервисное обслуживание фильтров для воды в гостинице в
+                Краснодаре</a
+              >
+              <div class="news__wrapper_item-text">
+                Как должно производиться сервисное обслуживание фильтров в
+                гостинице показываем на примере реального случая из практики
+                сервисной службы
+              </div>
+
+              <div class="post_m_it">17.07.2025</div>
+            </div>
+            <div class="news__wrapper_item">
+              <a
+                href="blog/reagentnaya-filtratsiya-i-septik-dejstvitelno-li-pogibayut-bakterii"
+                class="news__wrapper_item-img"
+              >
+                <img
+                  src="https://filtromir.ru/files/posts/222-ef3AERpPNSW6xd-xwjnH.png"
+                  class="img-responsive"
+                  title="Реагентная фильтрация и септик: действительно ли погибают бактерии?"
+                  alt="Реагентная фильтрация и септик: действительно ли погибают бактерии?"
+                />
+              </a>
+              <a
+                href="blog/reagentnaya-filtratsiya-i-septik-dejstvitelno-li-pogibayut-bakterii"
+                class="news__wrapper_item-title"
+                >Реагентная фильтрация и септик: действительно ли погибают
+                бактерии?</a
+              >
+              <div class="news__wrapper_item-text">
+                Многие владельцы частных домов опасаются, что после установки
+                системы очистки воды с реагентной регенерацией в септике погибли
+                бактерии .&nbsp;&nbsp;
+              </div>
+
+              <div class="post_m_it">11.07.2025</div>
+            </div>
+            <div class="news__wrapper_item">
+              <a
+                href="blog/ustanovka-sistemy-filtrov-dlya-vody-v-chastnom-dome-v-rostove-na-donu"
+                class="news__wrapper_item-img"
+              >
+                <img
+                  src="https://filtromir.ru/files/posts/img1007251.jpg"
+                  class="img-responsive"
+                  title="Установка системы фильтров для воды в частном доме в Ростове-на-Дону"
+                  alt="Установка системы фильтров для воды в частном доме в Ростове-на-Дону"
+                />
+              </a>
+              <a
+                href="blog/ustanovka-sistemy-filtrov-dlya-vody-v-chastnom-dome-v-rostove-na-donu"
+                class="news__wrapper_item-title"
+                >Установка системы фильтров для воды в частном доме в
+                Ростове-на-Дону</a
+              >
+              <div class="news__wrapper_item-text">
+                На примере реального случая из практики сервисной службы
+                объясняем, как нужно действовать, когда показатели примесей в
+                анализе воды из скважины превышают норму
+              </div>
+
+              <div class="post_m_it">10.07.2025</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrapper">
+        <div class="seo-text">
+          <div class="brands__text">
+            <h1>
+              Интернет магазин фильтров для очистки воды в Ростове и Краснодаре.
+            </h1>
+            <p>Современные фильтры для очистки воды — это уже необходимость!</p>
+            <p>
+              Качество и состояние питьевой воды ухудшается, чистой воды
+              становится все меньше. Водопроводной питьевой воде уже мало кто
+              доверяет. Вирусы, ржавчина, отходы производств, мусор и черви –
+              это лишь малая часть того, что находится в составе современной
+              воды. На карте России можно по пальцам пересчитать города, в
+              которых питьевая вода не то что чистая, а просто соответствует
+              стандартам. Ростов-на-Дону и Краснодар, к сожалению, в черном
+              списке городов с плохой водой. Не стоит отчаиваться – проблема с
+              водой в Ростове-на-Дону, Ростовской области, Краснодаре и
+              Краснодарском крае решаема. Для этого нужно купить фильтры для
+              очистки воды в магазинах ФильтроМир.
+            </p>
+            <a
+              href="#"
+              onclick="$(this).hide(); $('.full_text').show();  return false;"
+              style="color: #808080"
+              >Подробнее</a
+            >
+            <div class="full_text" style="display: none">
+              <p>
+                Первый совет – прежде чем решатся на покупку фильтров для
+                очистки воды, стоит определится какое качество воды вам нужно.
+              </p>
+              <h2>
+                &nbsp;Фильтры для дома для очистки воды в магазинах ФильтроМир
+              </h2>
+              <p>В магазинах ФильтроМир мы можете найти и купить:</p>
+              <ul>
+                <li>
+                  <span style="color: #3366ff"><span>&nbsp;</span></span
+                  ><strong
+                    ><span style="color: #3366ff"
+                      ><span style="color: #3366ff"
+                        ><a
+                          href="/catalog/obratnyj-osmos"
+                          title="Фильтры обратного осмоса "
+                          ><span style="color: #3366ff"
+                            >Фильтр обратного осмоса</span
+                          ></a
+                        ></span
+                      ></span
+                    ></strong
+                  >&nbsp;- осмоса – эффективная система очистки проточной воды.
+                  Очищает воду от 90% всех загрязнений. Система обратного осмоса
+                  мжет быть установлена в квартире, на кухне, в доме, под
+                  мойкой. Вода, очищенная фильтрами обратного осмоса, можно
+                  сразу же пить.
+                </li>
+                <li>
+                  <span style="color: #3366ff"><span>&nbsp;</span></span
+                  ><strong
+                    ><span style="color: #3366ff"
+                      ><a
+                        href="/catalog/protochnye-filtry"
+                        title="Проточный фильтр "
+                        ><span style="color: #3366ff"
+                          >Проточный фильтр для воды</span
+                        ></a
+                      ></span
+                    ></strong
+                  >&nbsp;- главное преимущество – компактность. Специалисты
+                  компании ФильтроМир помогут подобрать подходящий именно вам
+                  проточный фильтр для очистки воды.
+                </li>
+                <li>
+                  <span style="color: #3366ff"><span>&nbsp;</span></span
+                  ><strong
+                    ><span style="color: #3366ff"
+                      ><a
+                        href="/catalog/magistralnye-filtry"
+                        title="Магисральные фильтры для воды"
+                        ><span style="color: #3366ff"
+                          >Магистральные фильтры</span
+                        ></a
+                      ></span
+                    ></strong
+                  ><span style="color: #3366ff"><span>&nbsp;</span></span
+                  ><span style="color: #3366ff"
+                    ><span style="color: #3366ff"
+                      ><span
+                        >&nbsp;<span style="color: #888888">-&nbsp;</span></span
+                      ></span
+                    ></span
+                  ><span style="color: #3366ff"
+                    ><span><span style="color: #888888"></span></span></span
+                  >это первый барьер вашей системы водоснабжений. Магистральные
+                  фильтры для очистки воды блокируют в воде грубые примеси
+                  (песок, ил, глина) и ржавчины.
+                </li>
+                <li>
+                  <span style="color: #3366ff">&nbsp;</span
+                  ><strong
+                    ><span style="color: #3366ff"
+                      ><a
+                        href="/catalog/filtry-umyagchiteli"
+                        title="Фильтры для умягчения воды"
+                        ><span style="color: #3366ff"
+                          >Фильтр умягчитель для воды</span
+                        ></a
+                      ></span
+                    ></strong
+                  ><span style="color: #3366ff">&nbsp;</span>- превращают
+                  чрезмерно жесткую воду в нормальную. Фильтры для снижения
+                  жесткости воды очищают воду от солей кальция, магния,
+                  марганца, металлов. Мягкая вода в доме – это залог здоровья и
+                  чистоты сантехники и посуды от накипи.
+                </li>
+              </ul>
+              <h2>ФильтроМир сейчас – это:</h2>
+              <ul>
+                <li>
+                  Интернет-магазин. Актуальные цены на сайте, точное описание и
+                  характеристики товаров, полезная информация в нашем
+                  <span style="color: #0000ff"
+                    ><strong
+                      ><a href="/blog" title="полезная информация"
+                        ><span style="color: #0000ff">блоге</span></a
+                      ></strong
+                    ></span
+                  >, удобный каталог, возможность купить в один клик, несколько
+                  вариантов оплаты – наличными, банковскими картами или оплата
+                  он-лайн.
+                </li>
+                <li>
+                  Магазины в Ростове-на-Дону и Краснодаре с большим
+                  ассортиментом фильтров и систем очистки воды.
+                </li>
+                <li>
+                  Консультации в выборе фильтров очистки воды для квартиры,
+                  дома, коттеджа или промышленных систем.
+                </li>
+                <li>
+                  <span style="color: #0000ff"
+                    ><strong
+                      ><a href="/dostavka" title="условия и правила доставки"
+                        ><span style="color: #0000ff">Доставка</span></a
+                      >
+                    </strong></span
+                  >по Ростову-на-Дону, Ростовской области, Краснодару и
+                  Краснодарскому краю курьерами, а также есть возможность
+                  доставки фильтров и систем по все России с помощью
+                  транспортных компаний. &nbsp;
+                </li>
+                <li>
+                  Уникальная собственная
+                  <span style="color: #0000ff"
+                    ><strong
+                      ><a
+                        href="/catalog/servis-filtra-dlya-vody"
+                        title="сервисная служба"
+                        ><span style="color: #0000ff">сервисная служба</span></a
+                      ></strong
+                    ></span
+                  >. Установка, монтаж, настройка, обслуживание и ремонт
+                  фильтров для очистки воды – все по силам сервисменам.
+                </li>
+                <li>
+                  Склад с большими запасами фильтров и систем очистки воды, а
+                  так же картриджей, комплектующих и всех необходимых запчастей
+                  для них.
+                </li>
+                <li>
+                  Комплексное обслуживание по фильтрации воды и водоподготовке.
+                </li>
+                <li>
+                  <span style="color: #0000ff"
+                    ><strong
+                      ><a href="/garantiya" title="гарантийные условия"
+                        ><span style="color: #0000ff">Гарантия</span></a
+                      >
+                    </strong></span
+                  >на все продаваемые у нас фильтры для воды.
+                </li>
+                <li>
+                  Бонусы,
+                  <span style="color: #0000ff"
+                    ><strong
+                      ><a href="/aktsii" title="фильтры по сниженным ценам"
+                        ><span style="color: #0000ff">скидки</span></a
+                      >
+                    </strong></span
+                  >для клиентов. Приятное решение для того, чтобы сократить
+                  расходы при покупке фильтров для очистки воды.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__left">
+          <a href="." class="logo"
+            ><img
+              width="165"
+              height="59"
+              src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/filtromir-invert-165.png"
+              class="img-responsive"
+              title="Лого"
+              alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+          /></a>
+
+          <p class="copyright">
+            Все права защищены (с)<br />
+            Основано в 2015
           </p>
+          <br />
+          <a href="https://filtromir.ru/vozvrat-tovara-kuplennogo-v-filtromir"
+            >Возврат товара</a
+          ><br /><br />
+          <a href="https://filtromir.ru/o-kompanii">О компании</a>
+          <div class="social">
+            <a href="https://vk.com/filtromir" rel="nofollow" target="_blank"
+              ><img
+                width="25"
+                height="26"
+                src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/vk.png"
+                class="img-responsive"
+                title="Мы в ВКонтакте"
+                alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+            /></a>
+            <a href="https://t.me/Filtromir2022" rel="nofollow" target="_blank"
+              ><img
+                width="25"
+                height="26"
+                src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/teleg.png"
+                class="img-responsive"
+                title="Написать нам в Телеграмм"
+                alt="чат или задать вопрос фильтрам для воды в Ростове-на-Дону по самым низким ценам"
+            /></a>
+          </div>
         </div>
-        <div class="flex form-body">
-          <input
-            name="name"
-            type="text"
-            autocomplete="name"
-            placeholder="*Имя"
-            class="custom-input"
-            required
-          />
-          <input
-            name="phone"
-            type="text"
-            autocomplete="phone"
-            placeholder="*Телефон"
-            class="custom-input"
-            required
-          />
-          <input
-            name="comment"
-            type="text"
-            autocomplete="organization"
-            placeholder="Комментарий (необязательно)"
-            class="custom-input"
-          />
+
+        <div class="footer__menu">
+          <ul class="footer__menu_left">
+            <li><a href="." class="footer__menu-active">Главная</a></li>
+            <li>
+              <a href="https://filtromir.ru/aktsii">Акционные предложения</a>
+            </li>
+            <li><a href="blog">Полезная информация</a></li>
+            <li><a href="/dostavka">Доставка и оплата</a></li>
+            <li><a href="/nashi-raboty">Наши работы</a></li>
+            <li><a href="/blog/otzyvy">Отзывы</a></li>
+            <li>
+              <a
+                href="https://filtromir.ru/politika-zaschity-i-obrabotki-personalnyh-dannyh"
+                >Политика обработки персональных данных</a
+              >
+            </li>
+            <li><a href="contact">Контакты</a></li>
+          </ul>
+          <ul class="footer__menu_right">
+            <li><a href="/catalog/obratnyj-osmos">Обратный осмос</a></li>
+            <li><a href="/catalog/protochnye-filtry">Проточные фильтры</a></li>
+            <li>
+              <a href="/catalog/filtry-na-ves-dom">Фильтры на весь дом</a>
+            </li>
+            <li>
+              <a href="/catalog/magistralnye-filtry">Магистральные фильтры</a>
+            </li>
+            <li><a href="/catalog/smennye-filtry">Сменные фильтры</a></li>
+            <li>
+              <a href="/catalog/komplektuyuschie-k-filtram"
+                >Комплектующие к фильтрам</a
+              >
+            </li>
+            <li><a href="/service">Услуги</a></li>
+          </ul>
         </div>
-        <div class="flex form-footer">
-          <label class="custom-checkbox">
-            <input name="privacy" type="checkbox" required />
-            <span class="checkmark"></span>
-            Я принимаю условия передачи информации.
-          </label>
-          <button class="button bold" type="submit">Оставить заявку</button>
+        <div class="footer__contacts">
+          <p>
+            <a href="mailto:info@filtromir.ru"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;info@filtromir.ru</a
+            >
+          </p>
+          <div class="footer__contacts_phone">
+            <a href="tel:+79381001848">+7 (938) 100-18-48</a>
+            <a href="tel:+79676642300">+7 (967) 664-23-00</a>
+          </div>
+          <div class="footer__contacts_address">
+            <p>Наши магазины:</p>
+            <p>Ростов-на-Дону, ул.Вавилова, 54</p>
+            <p>Краснодар, ул.Российская, 372</p>
+          </div>
+          <a class="btn vacan" href="/vakansii" title="Вакансии компании"
+            >Вакансии</a
+          >
         </div>
-      </form>
-      <div class="background-image pic-4">
-        <h3 class="heading-3 color-wh text-shadow">Котельной</h3>
       </div>
-      <div class="background-image pic-5">
-        <h3 class="heading-3 color-wh text-shadow">HoReCa</h3>
+      <div align="center">
+        <h3><b>МЫ ДЕЛАЕМ ВОДУ ЧИСТОЙ</b></h3>
       </div>
-      <div class="grid-item-span-col-2-4 background-image pic-6">
-        <h3 class="heading-3 color-wh text-shadow">Автомоек и химчисток</h3>
-      </div>
-    </section>
+    </footer>
   </body>
   <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
 </html>

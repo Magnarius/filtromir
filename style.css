@@ -1,5 +1,17 @@
+body {
+  overflow-x: initial !important;
+}
+
+.header-top-menu-wrapper {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+}
+
 .header-top-menu {
-  height: 80px;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   color: #0179bf;

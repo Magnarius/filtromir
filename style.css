@@ -34,13 +34,9 @@ hr.header-hr {
 .title-block-container {
   justify-content: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 22px;
   padding: 40px 0;
   width: 100%;
-}
-
-.section {
-  padding: 40px 15px;
 }
 
 .categories_grid {
@@ -376,7 +372,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 
 .cards-container {
   flex-direction: row;
-  gap: 40px;
+  gap: 32px;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

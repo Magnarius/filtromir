@@ -36,6 +36,7 @@ hr.header-hr {
   flex-direction: column;
   gap: 40px;
   padding: 40px 0;
+  width: 100%;
 }
 
 .section {
@@ -487,11 +488,11 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   .cards-container {
     flex-wrap: nowrap;
     overflow: auto;
+    justify-content: start;
   }
 
-  .title-block-container {
-    width: 100%;
-    overflow: hidden;
+  .client-logo {
+    max-width: 150px;
   }
 }
 

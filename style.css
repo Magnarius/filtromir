@@ -349,7 +349,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 }
 .mobile-menu-header {
   display: none;
-  height: 80px;
+  height: 60px;
   border-bottom: 2px solid #6eb7e9;
   margin-bottom: 24px;
   position: relative;
@@ -398,6 +398,25 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 
 .client-logo:hover {
   transform: scale(1.2);
+}
+
+.header__bottom .wrapper {
+  align-items: center;
+  padding: 15px;
+}
+
+.header__bottom_item {
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.header__bottom_item-text {
+  margin: 0px;
+}
+
+.compare-and-cart {
+  gap: 8px;
 }
 
 @media (max-width: 1200px) {
@@ -456,6 +475,24 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   .menu_list {
     margin-top: 0;
   }
+
+  .ya-rate {
+    order: 1;
+  }
+
+  .header__bottom_wrap {
+    order: 2;
+  }
+
+  .header__bottom .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .header__bottom_item {
+    width: auto;
+  }
 }
 
 @media (max-width: 992px) {
@@ -501,7 +538,29 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 90px);
   }
+
   .form {
     grid-row: 5 / span 4;
+  }
+
+  .header__bottom .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .header__bottom_phone {
+    order: 2;
+  }
+
+  .header__bottom_wrap {
+    grid-column: span 2;
+  }
+
+  .compare-and-cart {
+    margin-left: auto;
+  }
+
+  .header__bottom_phone {
+    align-items: end;
   }
 }

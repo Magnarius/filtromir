@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Header</title>
-    <link href="./style.css" rel="stylesheet" />
     <link href="./main.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
     <script
       type="text/javascript"
       src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -19,24 +19,16 @@
           <div class="mobile-menu-header"></div>
           <ul class="menu_list flex">
             <li>
-              <a
-                class="header-menu-link"
-                href="file:///Users/magnarius/Documents/git/filtromir/header/index.html"
-                >О компании</a
-              >
+              <a class="header-menu-link" href="/o-kompanii">О компании</a>
             </li>
             <li>
-              <a
-                class="header-menu-link"
-                href="file:///Users/magnarius/Documents/git/filtromir/categories/index.html"
-                >Доставка и оплата</a
-              >
+              <a class="header-menu-link" href="/dostavka">Доставка и оплата</a>
             </li>
-            <li><a class="header-menu-link" href="/">Услуги</a></li>
+            <li><a class="header-menu-link" href="/service">Услуги</a></li>
             <li>
-              <a class="header-menu-link" href="/">Полезная информация</a>
+              <a class="header-menu-link" href="/blog">Полезная информация</a>
             </li>
-            <li><a class="header-menu-link" href="/">Контакты</a></li>
+            <li><a class="header-menu-link" href="/contact">Контакты</a></li>
           </ul>
         </nav>
         <div class="buttons text flex">
@@ -47,7 +39,7 @@
             >Регистрация</a
           >
 
-          <a href="/" aria-label="Корзина" class="cart header-menu-link"
+          <a href="/cart" aria-label="Корзина" class="cart header-menu-link"
             ><svg
               width="28"
               height="28"
@@ -74,8 +66,8 @@
         </div>
       </div>
     </div>
+    <hr class="header-hr" />
     <header class="header">
-      <hr class="header-hr" />
       <div class="header__bottom">
         <div class="wrapper">
           <span class="logo"
@@ -128,41 +120,49 @@
               </button>
             </form>
           </div>
-          <div class="header__bottom_item header__bottom_comparison">
-            <a href="https://filtromir.ru/compare" class="btn btn__icon"
-              ><img
-                width="22"
-                height="15"
-                src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics.png"
-                class="img-responsive"
-                title="Список сравнения"
-                alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
-            /></a>
-            <div class="header__bottom_item-text">
-              <a href="https://filtromir.ru/compare">Сравнение</a>
-              <p id="compare_informer">Нет товаров</p>
+          <iframe
+            src="https://yandex.ru/sprav/widget/rating-badge/23080508950?type=rating"
+            width="150"
+            height="50"
+            frameborder="0"
+            class="ya-rate"
+          ></iframe>
+          <div class="flex compare-and-cart">
+            <div class="header__bottom_item header__bottom_comparison">
+              <a href="https://filtromir.ru/compare" class="btn btn__icon"
+                ><img
+                  width="22"
+                  height="15"
+                  src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/analitics.png"
+                  class="img-responsive"
+                  title="Список сравнения"
+                  alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                />
+              </a>
+              <div class="header__bottom_item-text">
+                <a href="https://filtromir.ru/compare">Сравнение</a>
+              </div>
             </div>
-          </div>
-          <div
-            class="header__bottom_item header__bottom_basket"
-            id="cart_informer"
-          >
-            <a href="cart" class="btn btn__icon"
-              ><img
-                width="20"
-                height="20"
-                src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/basket.png"
-                class="img-responsive"
-                title="Корзина товаров"
-                alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
-              />
-              <div class="quantity">0</div></a
+            <div
+              class="header__bottom_item header__bottom_basket"
+              id="cart_informer"
             >
-            <div class="header__bottom_item-text">
-              <a href="cart">В корзине</a>
-              <p>Сумма: <strong>0</strong> руб.</p>
+              <a href="cart" class="btn btn__icon"
+                ><img
+                  width="20"
+                  height="20"
+                  src="https://filtromir.ru/design/filtry-rostov-krasnodar-2018/img/basket.png"
+                  class="img-responsive"
+                  title="Корзина товаров"
+                  alt="Фильтры для воды в Ростове-на-Дону по самым низким ценам"
+                />
+                <div class="quantity">0</div></a
+              >
+              <div class="header__bottom_item-text">
+                <a href="cart">В корзине</a>
+              </div>
+              <div id="cart_popup" style="display: none"></div>
             </div>
-            <div id="cart_popup" style="display: none"></div>
           </div>
         </div>
       </div>

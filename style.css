@@ -31,6 +31,13 @@ hr.header-hr {
   padding: 0 15px;
 }
 
+.title-block-container {
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0;
+}
+
 .section {
   padding: 40px 15px;
 }
@@ -353,6 +360,49 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   width: 280px;
 }
 
+.seo-text {
+  margin: 40px 0;
+}
+
+.seo-text h1 {
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+.seo-text p {
+  margin-bottom: 18px;
+}
+
+.cards-container {
+  flex-direction: row;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.certificate {
+  height: auto;
+  min-width: 150px;
+  max-width: 200px;
+}
+
+.box-shadow {
+  box-shadow: 0px 2px 8px #39393940;
+}
+
+.client-logo {
+  height: 120px;
+  width: auto;
+  max-width: 300px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+}
+
+.client-logo:hover {
+  transform: scale(1.2);
+}
+
 @media (max-width: 1200px) {
   .menu {
     display: flex;
@@ -433,6 +483,16 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   .categories_grid {
     grid-template-rows: repeat(4, 120px);
   }
+
+  .cards-container {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+
+  .title-block-container {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 
 @media (max-width: 720px) {
@@ -447,17 +507,4 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   .form {
     grid-row: 5 / span 4;
   }
-}
-
-.seo-text {
-  margin: 40px 0;
-}
-
-.seo-text h1 {
-  font-weight: 700;
-  margin-bottom: 24px;
-  font-size: 24px;
-}
-.seo-text p {
-  margin-bottom: 18px;
 }

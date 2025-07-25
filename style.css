@@ -142,6 +142,10 @@ hr.header-hr {
   z-index: 130;
 }
 
+.cart:hover .cart-count {
+  color: #0179bf;
+}
+
 .color-main {
   color: #0179bf;
 }
@@ -435,6 +439,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   min-width: 20px;
   justify-content: center;
   border-radius: 10px;
+  transition: color 0.2s ease-in-out;
 }
 
 .no-wrap {

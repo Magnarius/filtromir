@@ -11,7 +11,7 @@ body {
 }
 
 .header-top-menu {
-  height: 60px;
+  height: 40px;
   justify-content: space-between;
   align-items: center;
   color: #0179bf;
@@ -63,8 +63,8 @@ hr.header-hr {
 .background-image::before {
   content: '';
   position: absolute;
-  inset: 0; /* аналог top: 0; right: 0; bottom: 0; left: 0; */
-  background-color: rgba(0, 0, 0, 0.4); /* степень затемнения */
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
   z-index: 1;
 }
@@ -139,7 +139,7 @@ hr.header-hr {
 
 .cart {
   position: relative;
-  z-index: 30;
+  z-index: 130;
 }
 
 .color-main {
@@ -293,7 +293,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 30;
+  z-index: 130;
 }
 
 .burger-icon span {
@@ -349,7 +349,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 }
 .mobile-menu-header {
   display: none;
-  height: 60px;
+  height: 40px;
   border-bottom: 2px solid #6eb7e9;
   margin-bottom: 24px;
   position: relative;
@@ -423,6 +423,20 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   max-width: none;
 }
 
+.cart-count {
+  position: absolute;
+  display: flex;
+  top: -4px;
+  right: -14px;
+  color: #000;
+  font-weight: normal;
+  background-color: #8fd0ff;
+  min-height: 20px;
+  min-width: 20px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .menu {
     display: flex;
@@ -434,7 +448,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
     height: 100vh;
     background: #fff;
     box-shadow: -2px 0 16px rgba(0, 0, 0, 0.15);
-    z-index: 20;
+    z-index: 120;
     padding: 0px 24px 24px 24px;
     box-sizing: border-box;
     transform: translateX(100%);

@@ -7,7 +7,6 @@ $(function () {
     $menu.addClass('open').attr('aria-hidden', 'false');
     $overlay.show();
     $burger.addClass('open').attr('aria-expanded', 'true');
-    $('body').css('overflow', 'hidden');
   }
   function closeMenu() {
     $menu.removeClass('open').attr('aria-hidden', 'true');

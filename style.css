@@ -419,6 +419,10 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   gap: 8px;
 }
 
+.content .advantages_items .advantages_item p {
+  max-width: none;
+}
+
 @media (max-width: 1200px) {
   .menu {
     display: flex;
@@ -526,6 +530,13 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 
   .client-logo {
     max-width: 150px;
+  }
+}
+
+@media screen and (max-width: 992px) and (min-width: 480px) {
+  .content .advantages_items .advantages_item {
+    width: 50%;
+    flex-wrap: nowrap;
   }
 }
 

@@ -35,7 +35,7 @@ hr.header-hr {
   justify-content: center;
   flex-direction: column;
   gap: 22px;
-  padding: 40px 0;
+  padding: 40px 15px;
   width: 100%;
 }
 
@@ -380,8 +380,8 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 
 .certificate {
   height: auto;
-  min-width: 150px;
-  max-width: 200px;
+  min-width: 100px;
+  max-width: 150px;
 }
 
 .box-shadow {
@@ -435,6 +435,10 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   min-width: 20px;
   justify-content: center;
   border-radius: 10px;
+}
+
+.no-wrap {
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -540,6 +544,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
     flex-wrap: nowrap;
     overflow: auto;
     justify-content: start;
+    padding-bottom: 16px;
   }
 
   .client-logo {

@@ -431,12 +431,14 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   position: absolute;
   display: flex;
   top: -4px;
-  right: -14px;
+  left: 24px;
   color: #000;
   font-weight: normal;
   background-color: #8fd0ff;
+  box-sizing: border-box;
   min-height: 20px;
   min-width: 20px;
+  padding: 1px 6px;
   justify-content: center;
   border-radius: 10px;
   transition: color 0.2s ease-in-out;

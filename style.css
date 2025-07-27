@@ -42,7 +42,7 @@ hr.header-hr {
 .categories_grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 165px);
+  grid-template-rows: repeat(3, 1fr);
   place-items: stretch;
   gap: 20px;
 }
@@ -101,7 +101,7 @@ hr.header-hr {
   padding: 36px;
   display: flex;
   flex-direction: column;
-  gap: 5%;
+  gap: 12px;
 }
 
 .form-header {
@@ -444,6 +444,49 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   transition: color 0.2s ease-in-out;
 }
 
+.profile {
+  gap: 8px;
+  align-items: center;
+  position: relative;
+}
+
+.profile-popup {
+  position: absolute;
+  width: fit-content;
+  min-width: 100px;
+  background-color: #fff;
+  border-radius: 5px;
+  top: 100%;
+  right: 0px;
+  display: none;
+  color: initial;
+  padding: 20px;
+  flex-direction: column;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.profile-popup-list {
+  gap: 12px;
+  flex-direction: column;
+}
+
+.profile-popup-list-link {
+  width: 100%;
+}
+
+.profile-popup-list-link:hover {
+  color: #0179bf;
+}
+
+.profile-hover {
+  position: relative;
+}
+
+.profile-hover:hover .profile-popup {
+  display: flex;
+}
+
 .no-wrap {
   flex-wrap: nowrap;
 }
@@ -544,7 +587,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   }
 
   .categories_grid {
-    grid-template-rows: repeat(4, 120px);
+    grid-template-rows: repeat(4, 1fr);
   }
 
   .cards-container {
@@ -573,7 +616,7 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
 
   .categories_grid {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, 90px);
+    grid-template-rows: repeat(8, 1fr);
   }
 
   .form {

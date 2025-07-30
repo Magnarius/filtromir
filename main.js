@@ -1,24 +1,28 @@
-$(function () {
-  // Profile submenu on mobile devices
-
-  const profileTrigger = document.querySelector('.profile-hover');
-  const profilePopup = document.querySelector('.profile-popup');
-
-  const isTouchDevice = matchMedia(
+document.addEventListener('DOMContentLoaded', () => {
+  const isTouchDevice = window.matchMedia(
     '(hover: none) and (pointer: coarse)'
   ).matches;
 
-  if (isTouchDevice) {
-    profileTrigger.addEventListener('click', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      profilePopup.style.display =
-        profilePopup.style.display === 'flex' ? 'none' : 'flex';
-    });
+  if (!isTouchDevice) return;
 
-    document.addEventListener('click', (e) => {
-      e.preventDefault();
-      profilePopup.style.display = 'none';
-    });
-  }
+  const profileTrigger = document.querySelector('.profile-hover');
+  const tooltip = profileTrigger.querySelector('.profile-popup');
+  const triggerLink = profileTrigger.querySelector('.header-menu-link');
+
+  if (!profileTrigger || !tooltip || !triggerLink) return;
+
+  const togglePopup = () => {
+    tooltip.classList.toggle('hidden-popup');
+  };
+
+  triggerLink.addEventListener('click', (e) => {
+    e.preventDefault();
+    togglePopup();
+  });
+
+  window.addEventListener('click', (e) => {
+    if (!e.target.closest('.profile-hover')) {
+      tooltip.classList.add('hidden-popup');
+    }
+  });
 });

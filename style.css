@@ -396,12 +396,18 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   border-radius: 5px;
   top: 100%;
   right: 0px;
-  display: none;
   color: initial;
   padding: 20px;
-  flex-direction: column;
-  gap: 12px;
   white-space: nowrap;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 200ms ease;
+}
+
+.hidden-popup {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 200ms ease;
 }
 
 .profile-popup-list {
@@ -421,8 +427,14 @@ label.custom-checkbox input[type='checkbox'] ~ span.checkmark:before {
   position: relative;
 }
 
-.profile-hover:hover .profile-popup {
-  display: flex;
+@media (pointer: fine) and (hover: hover) {
+  .profile-hover:hover .profile-popup,
+  .profile-hover:focus-within .profile-popup,
+  .profile-hover:focus .profile-popup {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s linear 0s, opacity 200ms ease;
+  }
 }
 
 .no-wrap {
